@@ -4,13 +4,128 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>PDF</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="document" id="pdf">
-		<div class="page"><canvas id="page1"></canvas></div>
-		<div class="page"><canvas id="page2"></canvas></div>
+		<div class="page" id="p1"><canvas id="First_Page"></div>
+		<div class="page" id="p2">
+			<p id="catalog">Catalog</p>
+			<a href="#p3"><p class="pagelink">1. CSS APPLICATIONs ────────────────── 3</p></a>
+			<a href="#p4"><p class="pagelink">2. TIMELINE ──────────────────────── 4</p></a>
+		</div>
+		<div class="page" id="p3">
+			<div class="container1">
+				<div class="box">
+					<div class="side side--front">
+						<button><p>ITEM1</p></button>
+						<button><p>ITEM2</p></button>
+						<button><p>ITEM3</p></button>
+						<button><p>ITEM4</p></button>
+						<div class="shape"></div>
+					</div>
+					<div class="side side--left"></div>
+					<div class="side side--top"></div>
+				</div>
+			</div>
+			<div class="container2">
+				<div class="ring"></div>
+				<div class="ring"></div>
+				<div class="ring"></div>
+				<p>Loading...</p>
+			</div>
+			<div class="container3">
+				<span style="--clr: #1DA1F2;" data-text="2"><b>2</b></span>
+				<span style="--clr: #FFFC00;" data-text="0"><b>0</b></span>
+				<span style="--clr: #FF1359;" data-text="2"><b>2</b></span>
+				<span style="--clr: #25D366;" data-text="3"><b>3</b></span>
+			</div>
+		</div>
+		<div class="page" id="p4">
+			<div class="wrapper">
+				<div class="center-line">
+					<a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+				</div>
+				<div class="row row-1">
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">Title of Section 1</span>
+							<span>2023/07/16-1</span>
+						</div>
+						<p>PART 1 MESSAGE</p>
+					</section>
+				</div>
+				<div class="row row-2">
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">Title of Section 2</span>
+							<span>2023/07/16-2</span>
+						</div>
+						<p>PART 2 MESSAGE</p>
+					</section>
+				</div>
+				<div class="row row-3">
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">Title of Section 3</span>
+							<span>2023/07/16-3</span>
+						</div>
+						<p>PART 3 MESSAGE</p>
+					</section>
+				</div>
+				<div class="row row-4">
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">Title of Section 4</span>
+							<span>2023/07/16-4</span>
+						</div>
+						<p>PART 4 MESSAGE</p>
+					</section>
+				</div>
+				<div class="row row-5">
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">Title of Section 5</span>
+							<span>2023/07/16-5</span>
+						</div>
+						<p>PART 5 MESSAGE</p>
+					</section>
+				</div>
+				<div class="row row-6">
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">Title of Section 6</span>
+							<span>2023/07/16-6</span>
+						</div>
+						<p>PART 6 MESSAGE</p>
+					</section>
+				</div>
+				<div class="row row-7">
+					<section>
+						<i class="icon fas fa-star"></i>
+						<div class="details">
+							<span class="title">Title of Section 7</span>
+							<span>2023/07/16-7</span>
+						</div>
+						<p>PART 7 MESSAGE</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- <div class="page" id="0"><a href="#1"></a></div> -->
+		<!-- <div class="page" id="1"><canvas id="page1"></canvas></div> -->
+		<!-- <div class="page" id="2"><canvas id="page2"></canvas></div> -->
 	</div>
 </body>
-</html>
 <script src="canvas.js"></script>
+</html>
